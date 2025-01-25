@@ -1,0 +1,44 @@
+@keyframes pulseBeams {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.pulse-beams {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.6) 0%, rgba(0, 255, 255, 0) 60%);
+  border-radius: 50%;
+  animation: pulseBeams 3s infinite ease-in-out;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Make sure it doesn't block other interactions */
+}
+
+.cta-button {
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

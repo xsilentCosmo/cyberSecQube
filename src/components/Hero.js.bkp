@@ -1,0 +1,151 @@
+export default function Hero() {
+    return (
+        <>
+
+<section className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-32 flex items-center justify-center relative bg-cover bg-center" style={{ backgroundImage: 'url("https://preline.co/assets/svg/examples-dark/squared-bg-element.svg")' }}>
+      <div className="text-center">
+        <h1 className="text-5xl font-extrabold text-shadow-md">
+          Your Path to <span className="text-gradient-cyber">Cybersecurity Mastery</span>
+        </h1>
+        <p className="mt-4 text-xl max-w-2xl mx-auto">
+          Master the art of cybersecurity with cutting-edge training programs designed for the digital age. Learn from experts and secure your future today!
+        </p>
+        <div className="mt-8">
+          <a
+            href="/courses"
+            className="px-8 py-3 text-black bg-91e0ed rounded-md shadow-lg hover:shadow-xl hover:bg-white transition-all duration-300"
+          >
+            Start Securing Your Future
+          </a>
+        </div>
+      </div>
+
+      {/* Floating Shield Icon with Animation */}
+      <div className="absolute right-10 top-10 opacity-40 transform rotate-12 animate-pulse">
+        <img src="/shield-icon.svg" alt="Shield Icon" className="w-48 h-48" />
+      </div>
+
+      {/* Digital Effect or Code Animation */}
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-xl opacity-60">
+        <p className="animate-pulse">Scanning... 100% Secure</p>
+      </div>
+    </section>
+
+    {/* <section className="relative bg-black text-white py-16 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center">
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight">
+            Build Your <span className="text-[#91e0ed]">Cybersecurity</span> Career <br />
+            with <span className="text-gradient-cyber">CyberSecube</span>
+          </h1>
+          <p className="mt-6 text-lg text-gray-300">
+            Learn from industry experts and gain hands-on experience to master cybersecurity skills.
+          </p>
+          <div className="mt-8 space-x-4">
+            <a
+              href="/courses"
+              className="bg-[#91e0ed] px-6 py-3 text-black font-semibold rounded-md shadow-md hover:shadow-xl hover:bg-white transition-all"
+            >
+              Explore Courses
+            </a>
+            <a
+              href="/demo"
+              className="border border-[#91e0ed] px-6 py-3 text-[#91e0ed] font-semibold rounded-md hover:bg-[#91e0ed] hover:text-black transition-all"
+            >
+              Free Demo Class
+            </a>
+          </div>
+        </div>
+        <div className="lg:w-1/2 flex justify-center">
+          <img
+            src="/cybersecurity-illustration.svg"
+            alt="Cybersecurity Illustration"
+            className="w-full max-w-md lg:max-w-lg"
+          />
+        </div>
+      </div>
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="bg-gradient-cyber opacity-30 w-full h-full"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-particle-pattern"></div>
+      </div>
+    </section> */}
+
+
+
+    {/* <section className="relative bg-rich-black text-white py-32">
+      <div className="absolute inset-0 z-0">
+        
+        <img
+          src="/cyber-grid-bg.svg"
+          alt="Cyber Background"
+          className="w-full h-full object-cover opacity-20"
+        />
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+          **Master the Future of <span className="text-gradient-cyber">Cybersecurity</span>**
+        </h1>
+        <p className="mt-6 text-xl md:text-2xl max-w-3xl mx-auto">
+          Transform your career with hands-on training in ethical hacking, penetration testing, and advanced cyber defense strategies.
+        </p>
+        <div className="mt-8">
+          <a
+            href="/courses"
+            className="px-8 py-4 text-black bg-[#91e0ed] rounded-md text-lg shadow-lg hover:bg-white transition-all duration-300"
+          >
+            Explore Courses
+          </a>
+        </div>
+      </div>
+      
+      <div className="absolute bottom-0 right-0 opacity-50">
+        <img src="/floating-shield.svg" alt="Shield Animation" className="w-60 h-60" />
+      </div>
+    </section> */}
+
+
+{/* <section className="relative text-white py-40">
+  <div className="max-w-7xl mx-auto text-center">
+    <h1 className="text-6xl font-extrabold text-gradient-cyber">
+      Empowering the Next Generation of Cyber Defenders
+    </h1>
+    <p className="mt-6 text-xl max-w-2xl mx-auto">
+      Comprehensive Cybersecurity Training Tailored to Your Needs.
+    </p>
+    <div className="mt-8 flex justify-center gap-6">
+      <a href="/courses" className="px-8 py-4 bg-[#91e0ed] text-black rounded-md shadow-lg hover:bg-white transition-all">
+        View Courses
+      </a>
+      <a href="/contact" className="px-8 py-4 border border-[#91e0ed] text-[#91e0ed] rounded-md hover:text-white hover:bg-00375e transition-all">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</section> */}
+
+
+      {/* <section className="bg-gradient-cyber text-white py-32 flex items-center justify-center relative">
+        <div className="text-center">
+          <h1 className="text-5xl font-extrabold">
+            Your Path to <span className="text-gradient-cyber">Cybersecurity Mastery</span>
+          </h1>
+          <p className="mt-4 text-xl max-w-xl mx-auto">
+            Master the art of cybersecurity with cutting-edge training programs designed for the digital age.
+          </p>
+          <div className="mt-8">
+            <a
+              href="/courses"
+              className="px-8 py-3 text-black bg-[#91e0ed] rounded-md shadow-md hover:shadow-xl hover:bg-white transition-all duration-300"
+            >
+              Explore Courses
+            </a>
+          </div>
+        </div>
+        <div className="absolute right-10 top-10 opacity-20">
+          <img src="/shield-icon.svg" alt="Shield Icon" className="w-40 h-40" />
+        </div>
+      </section> */}
+      </>
+    );
+  }
+  

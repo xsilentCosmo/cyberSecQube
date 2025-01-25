@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-space-grotesk), sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.bg-gradient-cyber {
+  background: linear-gradient(90deg, #00375e, #91e0ed);
+}
+.text-gradient-cyber {
+  background: linear-gradient(90deg, #91e0ed, #00375e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+select {
+  outline: none; /* Removes the white border around the dropdown */
+  border: none; /* Removes any default border */
+  box-shadow: none; /* Ensures no shadow is applied */
+}
+
+select:focus {
+  outline: none; /* Prevents focus outline on click */
+  border-bottom: 2px solid #91e0ed; /* Matches theme border color on focus */
+}
+

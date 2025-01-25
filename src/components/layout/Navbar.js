@@ -70,6 +70,7 @@ export default function Navbar() {
             {['Home', 'About', 'Courses', 'Contact'].map((item) => (
               <Link
                 key={item}
+                onClick={()=>setIsMenuOpen(false)}
                 href={`/${item === 'Home' ? '' : item.toLowerCase()}`}
                 className="hover:text-[#91e0ed] transition-all duration-300"
               >

@@ -42,7 +42,7 @@ const Footer = () => {
             </p>
             <p className="text-sm">Phone: +91 9656250000</p>
             <p className="text-sm">
-              Address: 123 CyberSec Avenue, Digital City, Silicon Valley, CA 90001
+              Address: 3rd floor, Capital Tower, Patturaikkal, Thrissur, Kerala 680020
             </p>
           </div>
 
@@ -56,7 +56,7 @@ const Footer = () => {
               <Link href="https://x.com/CyberSecQube" className="text-xl hover:text-[#91e0ed]">
                 <FaXTwitter />
               </Link>
-              <Link href="https://www.linkedin.com/company/cybersecqube" className="text-xl hover:text-[#91e0ed]">
+              <Link href="https://www.linkedin.com/company/cyber_secqube" className="text-xl hover:text-[#91e0ed]">
                 <FaLinkedinIn />
               </Link>
               <Link href="https://instagram.com/CyberSecQube" className="text-xl hover:text-[#91e0ed]">

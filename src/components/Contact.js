@@ -1,4 +1,18 @@
+'use client'
+import { useState } from "react";
+
 export default function JoinUsSection() {
+  const [qualification, setQualification] = useState("");
+  const [otherQualification, setOtherQualification] = useState("");
+
+  const handleQualificationChange = (e) => {
+    setQualification(e.target.value);
+    // Reset other qualification if user switches away from "Other"
+    if (e.target.value !== "other") {
+      setOtherQualification("");
+    }
+  };
+
   return (
     <section className="bg-gray-900 text-white py-16 md:mt-0 mt-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -23,6 +37,7 @@ export default function JoinUsSection() {
                 <input
                   type="text"
                   id="name"
+                  maxLength={40}
                   placeholder="Enter your name"
                   className="w-full border-b-2 border-gray-600 bg-transparent focus:border-[#91e0ed] focus:outline-none text-white py-2"
                 />
@@ -36,6 +51,7 @@ export default function JoinUsSection() {
                 <input
                   type="email"
                   id="email"
+                  maxLength={40}
                   placeholder="Enter your email"
                   className="w-full border-b-2 border-gray-600 bg-transparent focus:border-[#91e0ed] focus:outline-none text-white py-2"
                 />
@@ -49,6 +65,7 @@ export default function JoinUsSection() {
                 <input
                   type="tel"
                   id="phone"
+                  maxLength={15}
                   placeholder="Enter your phone number"
                   className="w-full border-b-2 border-gray-600 bg-transparent focus:border-[#91e0ed] focus:outline-none text-white py-2"
                 />
@@ -61,7 +78,8 @@ export default function JoinUsSection() {
                 </label>
                 <select
                   id="qualification"
-                  defaultValue="" // This ensures no option is selected initially
+                  value={qualification}
+                  onChange={handleQualificationChange}
                   className="w-full border-b-2 border-gray-600 bg-transparent text-white py-2 focus:outline-none focus:border-[#91e0ed] appearance-none"
                 >
                   <option value="" disabled>
@@ -80,10 +98,25 @@ export default function JoinUsSection() {
                     Other
                   </option>
                 </select>
-
-
               </div>
 
+              {/* Conditional Input for Other Qualification */}
+              {qualification === "other" && (
+                <div>
+                  <label htmlFor="otherQualification" className="block text-sm font-medium text-gray-400">
+                    Specify Your Qualification
+                  </label>
+                  <input
+                    type="text"
+                    id="otherQualification"
+                    value={otherQualification}
+                    maxLength={40}
+                    onChange={(e) => setOtherQualification(e.target.value)}
+                    placeholder="Enter your qualification"
+                    className="w-full border-b-2 border-gray-600 bg-transparent focus:border-[#91e0ed] focus:outline-none text-white py-2"
+                  />
+                </div>
+              )}
 
               {/* Submit Button */}
               <button
@@ -155,7 +188,14 @@ export default function JoinUsSection() {
               </li>
             </ul>
             <div className="mt-10 w-full">
-              <iframe className="max-h-60 w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.5520828922736!2d76.2114936!3d10.5359014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3d8a127d306238d%3A0xb3681a1b0fa00e26!2sCyber%20SecQube!5e0!3m2!1sen!2sin!4v1737374864280!5m2!1sen!2sin" style={{ border: "0" }} allowFullScreen="#" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                className="max-h-60 w-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.5520828922736!2d76.2114936!3d10.5359014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3d8a127d306238d%3A0xb3681a1b0fa00e26!2sCyber%20SecQube!5e0!3m2!1sen!2sin!4v1737374864280!5m2!1sen!2sin"
+                style={{ border: "0" }}
+                allowFullScreen="#"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>

@@ -10,13 +10,13 @@ const courses = [
   { title: "Cloud Security Specialist", icon: "https://techcrunch.com/wp-content/uploads/2024/06/GettyImages-1422838176.jpg?w=1024", desc: ["Secure cloud", "Access control", "Prevent data leaks."] },
   { title: "Network Defense Tactics", icon: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/308272167/original/fde9b6426dd7351475442477fab7336b80b21a98/perform-penetration-test-on-your-web-app.png", desc: ["Secure networks", "Detect intrusions", "Protect assets."] },
   { title: "Cyber Forensics Pro", icon: "https://i0.wp.com/valuementor.com/wp-content/uploads/2022/08/A-Quick-Guide-to-Black-Box-Penetration-Test-Approach.webp?fit=1600%2C820&ssl=1", desc: ["Analyze breaches", "Gather evidence", "Trace attackers."] },
-  { title: "Governance, Risk, and Compliance", icon: "/grc-icon.svg", desc: ["Manage risks", "Implement policies", "Stay compliant."] },
+  { title: "Governance, Risk, and Compliance", icon: "https://www.governanceinstitute.com.au/app/uploads/2024/08/Risk-Management-1024x503.png", desc: ["Manage risks", "Implement policies", "Stay compliant."] },
 ];
 
 export default function AllCourses() {
   return (
     <>
-      <section className="bg-gradient-to-b from-gray-950 to-gray-900 text-white py-20">
+      <section className="bg-gradient-to-b from-gray-950 to-gray-900 text-white py-40 md:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           {/* Section Header */}
           <motion.div

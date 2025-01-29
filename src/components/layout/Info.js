@@ -33,7 +33,7 @@ export default function ContactInfoBar() {
           </div>
           <div className="flex items-center space-x-2">
             <FaEnvelope className="text-[#91e0ed] text-xl" />
-            <span className="text-sm">mail@cybersecube.com</span>
+            <span className="text-sm">mail@cybersecqube.com</span>
           </div>
         </div>
       </div>

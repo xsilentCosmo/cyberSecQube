@@ -59,7 +59,7 @@ const Footer = () => {
               <Link href="https://www.linkedin.com/company/cyber_secqube" className="text-xl hover:text-[#91e0ed]">
                 <FaLinkedinIn />
               </Link>
-              <Link href="https://instagram.com/CyberSecQube" className="text-xl hover:text-[#91e0ed]">
+              <Link href="https://instagram.com/Cyber_SecQube" className="text-xl hover:text-[#91e0ed]">
                 <FaInstagram />
               </Link>
               <Link href="https://www.youtube.com/channel/UCyberSecQube" className="text-xl hover:text-[#91e0ed]">
